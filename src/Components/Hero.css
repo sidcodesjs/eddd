@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kind Sans', sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    background-color: #fff;
+    color: #4748ac;
+    padding: 40px;
+    position: relative;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Add spacing between sections */
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+
+.hero-text {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.highlight {
+    color: #4748ac;
+    font-weight: 800;
+}
+
+.hero-button {
+    background-color: #4748ac;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 70px;
+    /* Adjust as necessary */
+    width: 350px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #3a52e9;
+    transform: scale(1.1);
+}
+
+/* PMP Facts Section */
+.pmp-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.pmp-facts {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pmp-facts span.highlight {
+    color: #4748ac;
+    font-weight: 900;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        width: 220px;
+    }
+
+    .pmp-facts {
+        font-size: 1.2rem;
+        transform: translateY(20px);
+    }
+}

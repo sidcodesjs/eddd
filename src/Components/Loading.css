@@ -1,0 +1,52 @@
+/* Loading.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling during loading */
+}
+
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #4748ac;
+    /* Background color */
+}
+
+.loading-text {
+    font-size: 5rem;
+    /* Font size for the text */
+    font-weight: 800;
+    /* Font weight */
+    color: white;
+    /* Text color */
+    animation: fadeInSlide 2s ease-in-out infinite;
+    /* Animation */
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        /* Start invisible */
+        transform: translateY(-50px);
+        /* Start slightly above */
+    }
+
+    50% {
+        opacity: 1;
+        /* Fully visible */
+        transform: translateY(0);
+        /* Original position */
+    }
+
+    100% {
+        opacity: 0;
+        /* Fade out */
+        transform: translateY(50px);
+        /* Slide down */
+    }
+}

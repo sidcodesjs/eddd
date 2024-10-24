@@ -1,0 +1,181 @@
+.about-trainer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background-color: #f9f9f9;
+
+    color: #333;
+    overflow: hidden;
+
+}
+
+.trainer-image-container {
+    width: 100%;
+
+    max-width: 300px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+}
+
+.trainer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+
+}
+
+.trainer-image:hover {
+    transform: scale(1.05);
+
+}
+
+.trainer-info {
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+.trainer-title {
+    font-size: 3rem;
+
+    font-weight: 700;
+    margin: 15px 0;
+    color: #4748ac;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.trainer-description {
+    font-size: 1.5rem;
+
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.carousel-button {
+    background-color: #4748ac;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.carousel-button:hover {
+    background-color: #3a52e9;
+    transform: scale(1.05);
+
+}
+
+
+.sub-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+
+}
+
+.sub-section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4748ac;
+    margin: 15px 0;
+}
+
+.sub-section-content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-trainer-section {
+        align-items: center;
+
+    }
+
+    .trainer-image-container {
+        margin: 0 0 20px 0;
+
+    }
+
+    .trainer-title {
+        font-size: 2rem;
+
+    }
+
+    .trainer-description {
+        font-size: 1rem;
+
+    }
+
+    .sub-section-title {
+        font-size: 2rem;
+
+    }
+
+    .sub-section-content {
+        font-size: 1rem;
+
+    }
+
+    .carousel-button {
+        background-color: #4748ac;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 4px;
+        width: 27%;
+        font-size: .5rem;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+}

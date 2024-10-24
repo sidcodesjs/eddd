@@ -1,0 +1,114 @@
+/* Footer.css */
+.footer {
+    background-color: #4748ac;
+    /* Same background color as TrainingOption.js */
+    color: #fff;
+    /* White text for contrast */
+    padding: 40px 20px;
+    /* Padding for spacing */
+    text-align: center;
+    /* Center the text */
+}
+
+.footer-content {
+    max-width: 800px;
+    /* Max width for content */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    /* Title font size */
+    margin-bottom: 15px;
+    /* Space below the title */
+}
+
+.footer-description {
+    font-size: 1.2rem;
+    /* Description font size */
+    margin-bottom: 25px;
+    /* Space below the description */
+}
+
+.footer-form {
+    display: flex;
+    /* Flexbox for input and button */
+    justify-content: center;
+    /* Center them */
+    margin-bottom: 20px;
+    /* Space below the form */
+}
+
+.footer-input {
+    padding: 10px;
+    /* Padding for input */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-right: 10px;
+    /* Space between input and button */
+    width: 300px;
+    /* Width of input */
+}
+
+.footer-button {
+    padding: 10px 20px;
+    /* Padding for button */
+    background-color: #fff;
+    /* White background for button */
+    color: #4748ac;
+    /* Text color matching footer background */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s;
+    /* Transition effect */
+}
+
+.footer-button:hover {
+    background-color: #e7e7e7;
+    /* Change background on hover */
+}
+
+.footer-links {
+    margin: 20px 0;
+    /* Space around the links */
+}
+
+.footer-link {
+    color: #fff;
+    /* White text for links */
+    margin: 0 15px;
+    /* Space between links */
+    text-decoration: none;
+    /* No underline */
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+
+    font-size: 0.9rem;
+
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .footer-description {
+        font-size: 1rem;
+
+    }
+}

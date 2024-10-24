@@ -1,0 +1,194 @@
+/* General Container */
+.recorded-videos-container {
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Title */
+.recorded-videos-title {
+    font-size: 3.5rem;
+    /* Increased title size */
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4748ac;
+    /* Theme color */
+}
+
+/* Search Bar */
+.search-bar {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    /* Animation for smoother interactions */
+}
+
+.search-bar input:focus {
+    width: 55%;
+    /* Slight expansion on focus */
+    border-color: #4748ac;
+    box-shadow: 0 0 8px rgba(71, 72, 172, 0.5);
+}
+
+/* Category Filter */
+.category-filter {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.category-filter select {
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.category-filter select:hover,
+.category-filter select:focus {
+    border-color: #4748ac;
+    box-shadow: 0 0 8px rgba(71, 72, 172, 0.5);
+}
+
+/* Sections */
+.continue-watching,
+.you-may-like {
+    margin-bottom: 50px;
+}
+
+.continue-watching h2,
+.you-may-like h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #4748ac;
+}
+
+/* Video Card */
+.video-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    width: 100%;
+    /* Responsive to container */
+    max-width: 360px;
+    /* Maintain max width for larger screens */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside the card */
+.video-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Video Title */
+.video-title {
+    font-size: 2rem;
+    /* Larger title */
+    color: #4748ac;
+    margin-bottom: 20px;
+}
+
+/* Video Description */
+.video-description {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+}
+
+/* Video Date and Price */
+.video-date,
+.video-price {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Play Button */
+.play-button {
+    display: inline-block;
+    background-color: #4748ac;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+    background-color: #3a52e9;
+    transform: translateY(-5px);
+}
+
+/* Videos Grid */
+.videos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 80%;
+        /* Increased input size on smaller screens */
+    }
+
+    .category-filter select {
+        width: 80%;
+    }
+
+    .video-card {
+        width: 100%;
+        max-width: none;
+        /* Removes max-width on smaller screens */
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+    .recorded-videos-title {
+        font-size: 2.5rem;
+        /* Smaller title for small screens */
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .category-filter select {
+        width: 90%;
+    }
+
+    .video-card {
+        padding: 20px;
+    }
+
+    .video-title {
+        font-size: 1.8rem;
+    }
+
+    .play-button {
+        padding: 10px 20px;
+    }
+}

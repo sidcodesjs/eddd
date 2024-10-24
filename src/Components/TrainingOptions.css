@@ -1,0 +1,221 @@
+.training-options-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, rgba(58, 82, 233, 0.9), rgba(71, 72, 172, 0.9));
+    color: white;
+    text-align: center;
+}
+
+.background-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%);
+    background-size: 20px 20px;
+    /* Size of the pattern */
+    z-index: 0;
+    /* Behind other content */
+}
+
+/* Abstract Floating Shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    /* Transparency */
+}
+
+.shape-1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 5%;
+    animation: float 4s ease-in-out infinite;
+}
+
+.shape-2 {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    right: 10%;
+    animation: float 5s ease-in-out infinite;
+}
+
+.shape-3 {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    right: 5%;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.training-options-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.training-options-title::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: white;
+    width: 50%;
+    margin: 20px auto 0;
+}
+
+.options-container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.option-card {
+    background-color: #f5f5f5;
+    /* Light background for contrast */
+    border-radius: 20px;
+    padding: 40px;
+    /* Increased padding for better spacing */
+    width: 300px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow for decorative lines */
+    border-left: 8px solid #4748ac;
+    /* Colorful left border */
+}
+
+.option-card:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    /* Line width */
+    background-color: #4748ac;
+    /* Line color */
+    top: 50%;
+    /* Center vertically */
+    right: -20px;
+    /* Position to the right of the first card */
+    height: calc(100% - 40px);
+    /* Height of the line, minus padding */
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    /* Lift effect */
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.option-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #4748ac;
+}
+
+.option-description {
+    font-size: 1.1rem;
+    /* Increased font size for subtext */
+    color: #333;
+    line-height: 1.6;
+    /* Increased line height for better readability */
+    margin: 10px 0;
+}
+
+.learn-more-button {
+    background-color: #4748ac;
+    color: white;
+    padding: 12px 25px;
+    /* Increased padding for the button */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+    /* Increased spacing above button */
+}
+
+.learn-more-button:hover {
+    background-color: #3a52e9;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .option-card {
+        width: calc(50% - 15px);
+        /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .option-card {
+        width: calc(100% - 20px);
+        /* Full width on small screens */
+        padding: 25px;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .options-container {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        gap: 100px;
+        width: 90%;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    .option-description {
+        font-size: 1rem;
+        /* Increased font size for subtext */
+        color: #333;
+        line-height: 1.6;
+        /* Increased line height for better readability */
+        margin: 10px 0;
+    }
+
+    .training-options-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        position: relative;
+    }
+}
