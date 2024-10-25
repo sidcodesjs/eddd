@@ -1,0 +1,143 @@
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow for slide effect */
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+    /* Title font size */
+    color: #4748ac;
+    /* Title color */
+    margin-bottom: 30px;
+    /* Space below title */
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Hide overflow for slide effect */
+}
+
+.carousel-content {
+    display: flex;
+    /* Align items in a row */
+    transition: transform 0.5s ease;
+    /* Smooth transition for sliding effect */
+}
+
+.testimonial-card {
+    min-width: 100%;
+    /* Each card takes full width */
+    background-color: white;
+    /* Card background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+    padding: 20px;
+    /* Padding for card content */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Stack text vertically */
+    align-items: center;
+    /* Center align text */
+    text-align: center;
+    /* Center align text */
+}
+
+.testimonial-image {
+    border-radius: 50%;
+    /* Circular image */
+    width: 100px;
+    /* Image size */
+    height: 100px;
+    /* Image size */
+    margin-bottom: 15px;
+    /* Space below image */
+    object-fit: cover;
+    /* Cover the image without distortion */
+}
+
+.testimonial-quote {
+    font-size: 1.5rem;
+    /* Quote font size */
+    font-style: italic;
+    /* Italic style for quote */
+    margin-bottom: 20px;
+    /* Space below quote */
+}
+
+.testimonial-author {
+    font-size: 1.2rem;
+    /* Author font size */
+    font-weight: bold;
+    /* Bold style for author */
+}
+
+.testimonial-location {
+    font-weight: normal;
+    /* Normal weight for location */
+    color: #666;
+    /* Lighter color for location */
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Space between content and buttons */
+}
+
+.carousel-button {
+    background-color: #4748ac;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    /* Button padding */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    /* Margin between buttons */
+    transition: background-color 0.3s ease;
+    /* Transition effects */
+    font-size: 1.5rem;
+    /* Increase button font size */
+}
+
+.carousel-button:hover {
+    background-color: #3a52e9;
+    /* Hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-title {
+        font-size: 2rem;
+        /* Smaller title size */
+    }
+
+    .testimonial-quote {
+        font-size: 1.2rem;
+        /* Smaller quote size */
+    }
+
+    .testimonial-author {
+        font-size: 1rem;
+        /* Smaller author size */
+    }
+
+    .testimonial-image {
+        width: 80px;
+        /* Smaller image size for mobile */
+        height: 80px;
+        /* Smaller image size for mobile */
+    }
+}

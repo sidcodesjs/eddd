@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kind Sans', sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    background-color: #fff;
+    color: #4748ac;
+    padding: 40px;
+    position: relative;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+
+.hero-text {
+    font-size: 5.5rem;
+    /* Reduced for better readability */
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.highlight {
+    color: #4748ac;
+    font-weight: 800;
+}
+
+.hero-button {
+    background-color: #4748ac;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    /* Reduced for better button placement */
+    width: 300px;
+    /* Adjusted for consistency */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #3a52e9;
+    transform: scale(1.05);
+    /* Slight hover effect */
+}
+
+
+.quiz-button {
+    display: inline-block;
+    background-color: #4748ac;
+    color: white;
+    font-family: 'DM sans';
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    align-items: center;
+    width: 170px;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #3a52e9;
+}
+
+.hero-quiz-text {
+    font-family: 'DM sans';
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    color: #333;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        /* Stack items vertically on mobile */
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .hero-text {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        width: 220px;
+        /* Smaller width for mobile */
+    }
+
+    .quiz-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        width: 170px;
+        margin-bottom: 80px;
+        position: relative;
+        /* Smaller width for mobile */
+    }
+
+    /* .quiz-button {
+        padding: 30px, 10px, 10px, 30px;
+        font-size: 1rem;
+        width: 50%;
+        /* margin-right: 60px;
+        margin-bottom: 60px; */
+    /* height: 50%; */
+}

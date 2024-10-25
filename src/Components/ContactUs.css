@@ -1,0 +1,126 @@
+/* ContactUs.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    margin-top: 20px;
+
+}
+
+.contact-us {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    margin-top: 0px;
+    background-color: #ffffff;
+
+    border-radius: 0;
+
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+
+    color: #4748ac;
+
+    margin: 0 auto;
+
+}
+
+/* Heading Style */
+.contact-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    /* Adjust font size */
+    color: #4748ac;
+    /* Heading color */
+}
+
+/* Form Styles */
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/* Input and Textarea Styles */
+.contact-us input,
+.contact-us textarea {
+    padding: 15px;
+    /* Padding inside the inputs */
+    margin: 15px 0;
+    /* Spacing between inputs */
+    border: 2px solid #4748ac;
+    /* Border color */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    /* Font size for inputs */
+    transition: border-color 0.3s;
+    /* Transition effect for border color */
+    color: #4748ac;
+    /* Input text color */
+    background-color: #f9f9f9;
+    /* Light background for inputs */
+}
+
+/* Placeholder Styles */
+.contact-us input::placeholder,
+.contact-us textarea::placeholder {
+    color: #a0a0a0;
+    /* Gray color for placeholders */
+    opacity: 1;
+    /* Ensure opacity is set to 1 */
+}
+
+/* Focus Styles */
+.contact-us input:focus,
+.contact-us textarea:focus {
+    border-color: #3a52e9;
+    /* Darker shade on focus */
+    outline: none;
+    /* Remove outline */
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: #4748ac;
+    /* Primary button color */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* Font size for button */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Hover effect */
+}
+
+.submit-button:hover {
+    background-color: #3a52e9;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px;
+        /* Adjust padding for mobile */
+    }
+
+    .contact-us h2 {
+        font-size: 2rem;
+        /* Reduce heading size for mobile */
+    }
+
+    .contact-us input,
+    .contact-us textarea {
+        font-size: 1rem;
+        /* Reduce input font size for mobile */
+    }
+
+    .submit-button {
+        font-size: 1.2rem;
+        /* Reduce button font size for mobile */
+    }
+}

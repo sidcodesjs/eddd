@@ -1,0 +1,12 @@
+/* TypewriterEffect.css */
+.typewriter-text {
+    font-size: 2rem;
+    /* Adjust as needed */
+    font-family: 'Kind Sans', sans-serif;
+    /* Use your desired font */
+    font-style: italic;
+    color: #4748ac;
+    /* Set color for the text */
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
