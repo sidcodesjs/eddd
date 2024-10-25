@@ -13,9 +13,8 @@ const Hero = () => {
         <div className="hero" ref={ref}>
             <div className="hero-left">
                 <h1 className={`hero-text ${inView ? 'animate' : ''}`}>
-                    Get <span className="highlight">PMP Certified</span> <br /> 
-                    & Manage <span className="highlight">Projects</span><br />
-                    Better
+                    Get <span className="highlight">PMP Certified</span>  
+                    & Manage <span className="highlight">Projects</span> Better
                 </h1>
                 
                 <button className="hero-button">Book a Demo</button>
