@@ -31,8 +31,8 @@ body {
 }
 
 .hero-text {
-    font-size: 4rem;
-    /* Reduced for better readability */
+    font-size: 3rem;
+
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: 2px;
