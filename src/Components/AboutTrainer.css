@@ -28,7 +28,7 @@
 }
 
 .trainer-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@
 }
 
 .trainer-description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     line-height: 1.6;
     margin: 20px 0;
