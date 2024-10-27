@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar'; 
 import Hero from './Components/Hero'; 
 import About from './Components/About'; 
@@ -11,14 +12,13 @@ import Footer from './Components/Footer';
 import ContactUs from './Components/ContactUs';
 import RecordedVideos from './Components/RecordedVideos'; 
 import QuizPage from './Components/QuizPage'; 
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MockExams from './Components/MockExams';
+import CoursePayment from './Components/CoursePayment'; // Import the new component
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Main page with all components */}
         <Route path="/" element={
           <>
             <Navbar />
@@ -34,11 +34,10 @@ function App() {
           </>
         } />
         
-        
         <Route path="/quiz" element={<QuizPage />} />
-        
-       
         <Route path="/recorded-videos" element={<RecordedVideos />} />
+        <Route path="/mock-exams" element={<MockExams />} />
+        <Route path="/course-payment" element={<CoursePayment />} /> {/* New route */}
       </Routes>
     </Router>
   );

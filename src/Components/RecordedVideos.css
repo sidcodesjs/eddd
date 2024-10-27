@@ -16,12 +16,12 @@
 }
 
 /* Search Bar */
-.search-bar {
+.search-bar1 {
     margin-bottom: 25px;
     text-align: center;
 }
 
-.search-bar input {
+.search-bar1 input {
     width: 50%;
     padding: 12px;
     font-size: 1.2rem;
@@ -31,7 +31,7 @@
     /* Animation for smoother interactions */
 }
 
-.search-bar input:focus {
+.search-bar1 input:focus {
     width: 55%;
     /* Slight expansion on focus */
     border-color: #4748ac;

@@ -73,7 +73,7 @@ const RecordedVideos = () => {
       <h1 className="recorded-videos-title">Recorded Sessions</h1>
 
       {/* Search Bar */}
-      <div className="search-bar">
+      <div className="search-bar1">
         <input
           type="text"
           placeholder="Search for a video..."

@@ -37,7 +37,7 @@ const Navbar = () => {
       <ul className={isMobile ? "nav-links-mobile show" : "nav-links"} onClick={() => setIsMobile(false)}>
         <li><a href="#home">Home</a></li>
         <li><a href="/recorded-videos">Recorded Videos</a></li>
-        <li><a href="#exams">Mock Exams</a></li>
+        <li><a href="/mock-exams">Mock Exams</a></li>
         <li><a href="#" onClick ={handleSignIn}>Sign In</a></li>
       </ul>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
